@@ -4,6 +4,8 @@ print("Naredi nakupovalni seznam: ")
 
 prvi_artikel = raw_input("Kaj zelis kupiti? ")
 
+nakupovalni_seznam.append(prvi_artikel)
+
 odgovor = "da"
 
 while odgovor == "da":
@@ -11,7 +13,7 @@ while odgovor == "da":
 
     if odgovor == "ne":
         print("Tvoj seznam: ")
-        print("- " + prvi_artikel)
+
         for artikel in nakupovalni_seznam:
             print("- ") +  artikel
         break
@@ -22,7 +24,3 @@ while odgovor == "da":
         dodatek = raw_input("Povej kaj zelis dodati? ")
 
     nakupovalni_seznam.append(dodatek)
-
-
-
-
